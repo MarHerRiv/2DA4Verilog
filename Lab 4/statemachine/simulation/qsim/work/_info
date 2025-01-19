@@ -1,0 +1,57 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/marco/OneDrive/Desktop/Lab 4/statemachine/simulation/qsim
+vstatemachine
+Z1 !s110 1700195446
+!i10b 1
+!s100 _ImUW@:Me^jcBTKNCU>;00
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I1@7XD9o27L7a<J2eX1To[1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1700195444
+8statemachine.vo
+Fstatemachine.vo
+!i122 2
+L0 32 598
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1700195446.000000
+!s107 statemachine.vo|
+!s90 -work|work|statemachine.vo|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+vstatemachine_vlg_vec_tst
+R1
+!i10b 1
+!s100 z^Z^7ZOHfXajPzRPFDzHY2
+R2
+I70?kWjBIDPdTdD>zHWX1K2
+R3
+R0
+w1700195443
+8statemachine.vwf.vt
+Fstatemachine.vwf.vt
+!i122 3
+L0 30 92
+R4
+r1
+!s85 0
+31
+R5
+!s107 statemachine.vwf.vt|
+!s90 -work|work|statemachine.vwf.vt|
+!i113 1
+R6
+R7

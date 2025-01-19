@@ -1,0 +1,340 @@
+$comment
+	File created using the following command:
+		vcd file test.msim.vcd -direction
+$end
+$date
+	Fri Nov 17 01:29:48 2023
+$end
+$version
+	ModelSim Version 2020.1
+$end
+$timescale
+	1ps
+$end
+
+$scope module test_vlg_vec_tst $end
+$var reg 1 ! change_button $end
+$var reg 1 " clock $end
+$var reg 1 # enter_button $end
+$var reg 1 $ resetn $end
+$var reg 4 % x [3:0] $end
+$var wire 1 & leds [0] $end
+$var wire 1 ' leds [1] $end
+$var wire 1 ( leds [2] $end
+$var wire 1 ) leds [3] $end
+$var wire 1 * leds [4] $end
+$var wire 1 + leds [5] $end
+$var wire 1 , leds [6] $end
+$var wire 1 - statebits [2] $end
+$var wire 1 . statebits [1] $end
+$var wire 1 / statebits [0] $end
+
+$scope module i1 $end
+$var wire 1 0 gnd $end
+$var wire 1 1 vcc $end
+$var wire 1 2 unknown $end
+$var tri1 1 3 devclrn $end
+$var tri1 1 4 devpor $end
+$var tri1 1 5 devoe $end
+$var wire 1 6 ~QUARTUS_CREATED_GND~I_combout $end
+$var wire 1 7 clock~input_o $end
+$var wire 1 8 clock~inputCLKENA0_outclk $end
+$var wire 1 9 x[2]~input_o $end
+$var wire 1 : x[0]~input_o $end
+$var wire 1 ; resetn~input_o $end
+$var wire 1 < change_button~input_o $end
+$var wire 1 = Selector7~0_combout $end
+$var wire 1 > cstate.Cc~q $end
+$var wire 1 ? Selector5~0_combout $end
+$var wire 1 @ cstate.Ac~q $end
+$var wire 1 A Selector6~0_combout $end
+$var wire 1 B cstate.Bc~q $end
+$var wire 1 C change~0_combout $end
+$var wire 1 D change~q $end
+$var wire 1 E enter_button~input_o $end
+$var wire 1 F Selector3~0_combout $end
+$var wire 1 G estate.Ce~q $end
+$var wire 1 H Selector1~0_combout $end
+$var wire 1 I estate.Ae~q $end
+$var wire 1 J Selector2~0_combout $end
+$var wire 1 K estate.Be~q $end
+$var wire 1 L enter~0_combout $end
+$var wire 1 M enter~q $end
+$var wire 1 N x[3]~input_o $end
+$var wire 1 O Equal0~0_combout $end
+$var wire 1 P Selector13~0_combout $end
+$var wire 1 Q state_changer.E_387~combout $end
+$var wire 1 R state.E~q $end
+$var wire 1 S Selector9~0_combout $end
+$var wire 1 T state_changer.A_487~combout $end
+$var wire 1 U state.A~0_combout $end
+$var wire 1 V state.A~q $end
+$var wire 1 W always6~0_combout $end
+$var wire 1 X Selector11~0_combout $end
+$var wire 1 Y state_changer.C_437~combout $end
+$var wire 1 Z state.C~q $end
+$var wire 1 [ Selector10~0_combout $end
+$var wire 1 \ Selector10~1_combout $end
+$var wire 1 ] state_changer.B_462~combout $end
+$var wire 1 ^ state.B~q $end
+$var wire 1 _ always4~0_combout $end
+$var wire 1 ` x[1]~input_o $end
+$var wire 1 a changereg[1]~0_combout $end
+$var wire 1 b changereg[2]~1_combout $end
+$var wire 1 c comboreg[2]~feeder_combout $end
+$var wire 1 d Equal0~1_combout $end
+$var wire 1 e Selector8~0_combout $end
+$var wire 1 f Selector12~0_combout $end
+$var wire 1 g state_changer.D_412~combout $end
+$var wire 1 h state.D~q $end
+$var wire 1 i leds~0_combout $end
+$var wire 1 j leds~1_combout $end
+$var wire 1 k statebits~2_combout $end
+$var wire 1 l comboreg [3] $end
+$var wire 1 m comboreg [2] $end
+$var wire 1 n comboreg [1] $end
+$var wire 1 o comboreg [0] $end
+$var wire 1 p xreg [3] $end
+$var wire 1 q xreg [2] $end
+$var wire 1 r xreg [1] $end
+$var wire 1 s xreg [0] $end
+$var wire 1 t changereg [3] $end
+$var wire 1 u changereg [2] $end
+$var wire 1 v changereg [1] $end
+$var wire 1 w changereg [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1!
+0"
+1#
+1$
+b0 %
+0,
+1+
+1*
+1)
+1(
+1'
+1&
+0/
+0.
+0-
+00
+11
+x2
+13
+14
+15
+06
+07
+08
+09
+0:
+1;
+1<
+0=
+0>
+0?
+0@
+0A
+0B
+0C
+0D
+1E
+0F
+0G
+0H
+0I
+0J
+0K
+0L
+0M
+0N
+0O
+0P
+0Q
+0R
+1S
+1T
+0U
+0V
+1W
+0X
+0Y
+0Z
+0[
+0\
+0]
+0^
+0_
+0`
+1a
+1b
+0c
+0d
+1e
+0f
+0g
+0h
+0i
+0j
+0k
+0o
+0n
+0m
+0l
+0s
+0r
+0q
+0p
+0w
+0v
+0u
+0t
+$end
+#30000
+0#
+b100 %
+b110 %
+0E
+1`
+19
+1J
+1L
+1H
+#50000
+1"
+17
+18
+1r
+1M
+1K
+1I
+1q
+1d
+0b
+0J
+0W
+0S
+0a
+0L
+1F
+0T
+1P
+1U
+1Q
+#100000
+0"
+07
+08
+#150000
+1"
+17
+18
+1V
+0M
+0K
+1G
+1R
+0)
+1-
+1W
+1[
+1i
+0(
+0*
+#200000
+0"
+07
+08
+#250000
+1"
+17
+18
+#280000
+1#
+1E
+0H
+0F
+#300000
+0"
+07
+08
+#330000
+0#
+0E
+1H
+1F
+#350000
+1"
+17
+18
+#400000
+0"
+07
+08
+#420000
+b10 %
+b0 %
+0`
+09
+#450000
+1"
+17
+18
+0r
+0q
+0d
+1b
+1a
+#500000
+0"
+07
+08
+#550000
+1"
+17
+18
+#570000
+1#
+1E
+0H
+0F
+#600000
+0"
+07
+08
+#650000
+1"
+17
+18
+0I
+0G
+#700000
+0"
+07
+08
+#750000
+1"
+17
+18
+#799000
+0"
+07
+08
+#850000
+1"
+17
+18
+#900000
+0"
+07
+08
+#950000
+1"
+17
+18
+#1000000

@@ -1,0 +1,32 @@
+module alu3 (carryin, x, y, s, carryout, d1, d2, q1, q2, clock1, clock2, reset);
+	input [2:0] d1, d2;
+	input clock1, clock2, reset;
+	output reg [2:0] q1, q2;
+	
+	always @(posedge clock1, negedge reset)
+	if (reset == 0)
+		q = 3'b000;
+   else
+		q = d;
+		
+	alwats @(posedge clock2)
+	q = d;
+
+	input [2:0] x, y;
+	input carryin;
+	output reg [2:0] s;
+	output reg carryout;
+	reg [3:0] c;
+	integer k;
+	
+	always @(x, y, carryin)
+	begin
+		c[0] = carryin;
+		for (k = 0; k <= 2; k = k+1)
+		begin
+			s[k] = x[k] ^ y[k] ^ c[k];
+			c[k+1] = (x[k] & y[k]) | (x[k] & c[k]) | (y[k] & c[k]);
+		end
+		carryout = c[3];
+	end
+endmodule

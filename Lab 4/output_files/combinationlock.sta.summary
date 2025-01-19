@@ -1,0 +1,101 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'fourbitreg:inputx|Q[0]'
+Slack : -6.968
+TNS   : -31.493
+
+Type  : Slow 1100mV 85C Model Setup 'clock'
+Slack : -3.652
+TNS   : -17.524
+
+Type  : Slow 1100mV 85C Model Hold 'clock'
+Slack : -2.418
+TNS   : -4.730
+
+Type  : Slow 1100mV 85C Model Hold 'fourbitreg:inputx|Q[0]'
+Slack : 1.073
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clock'
+Slack : -0.394
+TNS   : -12.973
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'fourbitreg:inputx|Q[0]'
+Slack : 0.368
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'fourbitreg:inputx|Q[0]'
+Slack : -6.934
+TNS   : -31.398
+
+Type  : Slow 1100mV 0C Model Setup 'clock'
+Slack : -3.396
+TNS   : -16.375
+
+Type  : Slow 1100mV 0C Model Hold 'clock'
+Slack : -2.493
+TNS   : -4.831
+
+Type  : Slow 1100mV 0C Model Hold 'fourbitreg:inputx|Q[0]'
+Slack : 0.854
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clock'
+Slack : -0.394
+TNS   : -13.959
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'fourbitreg:inputx|Q[0]'
+Slack : 0.354
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'fourbitreg:inputx|Q[0]'
+Slack : -3.708
+TNS   : -16.310
+
+Type  : Fast 1100mV 85C Model Setup 'clock'
+Slack : -2.361
+TNS   : -8.926
+
+Type  : Fast 1100mV 85C Model Hold 'clock'
+Slack : -1.409
+TNS   : -2.771
+
+Type  : Fast 1100mV 85C Model Hold 'fourbitreg:inputx|Q[0]'
+Slack : 0.784
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clock'
+Slack : -0.094
+TNS   : -2.252
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'fourbitreg:inputx|Q[0]'
+Slack : 0.428
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'fourbitreg:inputx|Q[0]'
+Slack : -3.392
+TNS   : -14.976
+
+Type  : Fast 1100mV 0C Model Setup 'clock'
+Slack : -1.834
+TNS   : -6.881
+
+Type  : Fast 1100mV 0C Model Hold 'clock'
+Slack : -1.424
+TNS   : -2.789
+
+Type  : Fast 1100mV 0C Model Hold 'fourbitreg:inputx|Q[0]'
+Slack : 0.626
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clock'
+Slack : -0.091
+TNS   : -2.211
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'fourbitreg:inputx|Q[0]'
+Slack : 0.429
+TNS   : 0.000
+
+------------------------------------------------------------

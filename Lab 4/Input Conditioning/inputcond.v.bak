@@ -1,0 +1,31 @@
+module inputcond (A, clock, led);
+	input A;
+	output led;
+	
+	reg [1:0] pulse;
+	parameter [1:0] A = 2'b00, B = 2'b01, C = 2'b10;
+
+	
+		always @(posedge clock)
+	begin
+		case (pulse)
+			Ae: if (~A)
+				 begin
+					leds[7] = 1;
+					leds[6] = 0;
+					pulse = Be;
+				 end
+			Be: if (~A)
+				 begin
+					leds[6] = 1;
+					leds[7] = 0;
+					pulse = Ce;
+				 end
+			Ce: if (A)
+				 begin
+					pulse = Ae;
+				 end
+		endcase
+	end
+
+endmodule

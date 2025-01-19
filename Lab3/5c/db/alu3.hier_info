@@ -1,0 +1,22 @@
+|alu3
+x[0] => q1[0].DATAIN
+x[1] => q1[1].DATAIN
+x[2] => q1[2].DATAIN
+clock => q1[0].CLK
+clock => q1[1].CLK
+clock => q1[2].CLK
+clock => q2[0].CLK
+clock => q2[1].CLK
+clock => q2[2].CLK
+reset => q2[0].ACLR
+reset => q2[1].ACLR
+reset => q2[2].ACLR
+leds[6] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+leds[5] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+leds[4] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+leds[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+leds[2] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+leds[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+leds[0] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

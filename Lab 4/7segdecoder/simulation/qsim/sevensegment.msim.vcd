@@ -1,0 +1,144 @@
+$comment
+	File created using the following command:
+		vcd file sevensegment.msim.vcd -direction
+$end
+$date
+	Fri Nov 17 00:07:46 2023
+$end
+$version
+	ModelSim Version 2020.1
+$end
+$timescale
+	1ps
+$end
+
+$scope module sevensegment_vlg_vec_tst $end
+$var reg 1 ! alarm $end
+$var reg 1 " new $end
+$var reg 1 # open $end
+$var wire 1 $ leds [0] $end
+$var wire 1 % leds [1] $end
+$var wire 1 & leds [2] $end
+$var wire 1 ' leds [3] $end
+$var wire 1 ( leds [4] $end
+$var wire 1 ) leds [5] $end
+$var wire 1 * leds [6] $end
+
+$scope module i1 $end
+$var wire 1 + gnd $end
+$var wire 1 , vcc $end
+$var wire 1 - unknown $end
+$var tri1 1 . devclrn $end
+$var tri1 1 / devpor $end
+$var tri1 1 0 devoe $end
+$var wire 1 1 ~QUARTUS_CREATED_GND~I_combout $end
+$var wire 1 2 alarm~input_o $end
+$var wire 1 3 open~input_o $end
+$var wire 1 4 new~input_o $end
+$var wire 1 5 leds~0_combout $end
+$var wire 1 6 leds~1_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+0#
+0*
+1)
+1(
+1'
+1&
+1%
+1$
+0+
+1,
+x-
+1.
+1/
+10
+01
+02
+03
+04
+05
+16
+$end
+#90000
+1!
+12
+0$
+0%
+0)
+15
+0&
+0(
+#170000
+0!
+02
+1$
+1%
+1)
+05
+1&
+1(
+#240000
+1"
+14
+15
+0&
+0(
+#330000
+0"
+04
+05
+1&
+1(
+#440000
+1#
+13
+15
+06
+0'
+0&
+0(
+#520000
+0#
+03
+05
+16
+1'
+1&
+1(
+#590000
+1!
+12
+0$
+0%
+0)
+15
+0&
+0(
+#670000
+0!
+02
+1$
+1%
+1)
+05
+1&
+1(
+#710000
+1"
+14
+15
+0&
+0(
+#780000
+0"
+04
+05
+1&
+1(
+#800000

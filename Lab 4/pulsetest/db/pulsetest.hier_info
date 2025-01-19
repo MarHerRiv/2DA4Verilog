@@ -1,0 +1,44 @@
+|pulsetest
+enter => epulse.OUTPUTSELECT
+enter => epulse.OUTPUTSELECT
+enter => epulse.OUTPUTSELECT
+enter => leds.OUTPUTSELECT
+enter => leds.OUTPUTSELECT
+enter => epulse.OUTPUTSELECT
+enter => epulse.OUTPUTSELECT
+enter => epulse.OUTPUTSELECT
+enter => leds.OUTPUTSELECT
+enter => leds.OUTPUTSELECT
+enter => epulse.OUTPUTSELECT
+enter => epulse.OUTPUTSELECT
+enter => leds3.DATAIN
+change => cpulse.OUTPUTSELECT
+change => cpulse.OUTPUTSELECT
+change => cpulse.OUTPUTSELECT
+change => leds.OUTPUTSELECT
+change => leds.OUTPUTSELECT
+change => cpulse.OUTPUTSELECT
+change => cpulse.OUTPUTSELECT
+change => cpulse.OUTPUTSELECT
+change => leds.OUTPUTSELECT
+change => leds.OUTPUTSELECT
+change => cpulse.OUTPUTSELECT
+change => cpulse.OUTPUTSELECT
+change => leds2.DATAIN
+clock => leds[4]~reg0.CLK
+clock => leds[5]~reg0.CLK
+clock => leds[6]~reg0.CLK
+clock => leds[7]~reg0.CLK
+clock => cpulse~4.DATAIN
+clock => epulse~4.DATAIN
+leds[4] <= leds[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+leds[5] <= leds[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+leds[6] <= leds[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+leds[7] <= leds[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+leds[8] <= <GND>
+leds[9] <= <GND>
+leds3 <= enter.DB_MAX_OUTPUT_PORT_TYPE
+leds2 <= change.DB_MAX_OUTPUT_PORT_TYPE
+leds1 <= <GND>
+
+

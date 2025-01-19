@@ -1,0 +1,57 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/marco/OneDrive/Desktop/Lab3/simulation/qsim
+vhex7seg
+Z1 !s110 1698887373
+!i10b 1
+!s100 e[3o]k<]YA@>MQma33DPi1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+In<3ERD>EY?NSC_fPaA<mf0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1698887372
+8hex7seg.vo
+Fhex7seg.vo
+!i122 4
+L0 32 400
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1698887373.000000
+!s107 hex7seg.vo|
+!s90 -work|work|hex7seg.vo|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+vhex7seg_vlg_vec_tst
+R1
+!i10b 1
+!s100 0a[_P7l=N7]X8=Qk[J_Q`3
+R2
+Ice@^9o^c:3o7EN6?JFh?i2
+R3
+R0
+w1698887370
+8hex7seg.vwf.vt
+Fhex7seg.vwf.vt
+!i122 5
+L0 30 68
+R4
+r1
+!s85 0
+31
+R5
+!s107 hex7seg.vwf.vt|
+!s90 -work|work|hex7seg.vwf.vt|
+!i113 1
+R6
+R7

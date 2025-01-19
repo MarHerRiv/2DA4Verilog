@@ -1,0 +1,57 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/marco/OneDrive/Desktop/Lab 4/test/simulation/qsim
+vtest
+Z1 !s110 1700202588
+!i10b 1
+!s100 cDzdLD`4C<_1>B?DAjQYb1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+In^lF2n7VkN?AgLQj;?hXG3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1700202586
+8test.vo
+Ftest.vo
+!i122 80
+L0 32 1617
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1700202588.000000
+!s107 test.vo|
+!s90 -work|work|test.vo|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+vtest_vlg_vec_tst
+R1
+!i10b 1
+!s100 Wgk9NDm4hFjiV61_HGj>>3
+R2
+I6i8Z?XJf5S1g^Yf3ZC5DT2
+R3
+R0
+w1700202585
+8test.vwf.vt
+Ftest.vwf.vt
+!i122 81
+L0 30 103
+R4
+r1
+!s85 0
+31
+R5
+!s107 test.vwf.vt|
+!s90 -work|work|test.vwf.vt|
+!i113 1
+R6
+R7

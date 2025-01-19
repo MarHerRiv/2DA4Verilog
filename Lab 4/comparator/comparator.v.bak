@@ -1,0 +1,12 @@
+module comparator(x, combo, equals, clock);
+	input [3:0] x, combo;
+	input clock;
+	output reg equals;
+	
+	always @(posedge clock)
+	begin
+		if (x == combo)
+			equals = 1;
+		else
+			equals = 0;
+	end

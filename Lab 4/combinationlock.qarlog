@@ -1,0 +1,22 @@
+Quartus Prime Archive log --	C:/Users/marco/OneDrive/Desktop/Lab 4/combinationlock.qarlog
+
+Archive:	C:/Users/marco/OneDrive/Desktop/Lab 4/combinationlock.qar
+Date:		Fri Nov 17 14:46:39 2023
+Quartus Prime		22.1std.2 Build 922 07/20/2023 SC Standard Edition
+
+	=========== Files Selected: ===========
+C:/Users/marco/OneDrive/Desktop/Lab 4/4bit registers/fourbitreg.v
+C:/Users/marco/OneDrive/Desktop/Lab 4/7segdecoder/sevensegment.v
+C:/Users/marco/OneDrive/Desktop/Lab 4/Input Conditioning/inputcond.v
+C:/Users/marco/OneDrive/Desktop/Lab 4/combinationlock.qpf
+C:/Users/marco/OneDrive/Desktop/Lab 4/combinationlock.qsf
+C:/Users/marco/OneDrive/Desktop/Lab 4/combinationlock.v
+C:/Users/marco/OneDrive/Desktop/Lab 4/combinationlock.vwf
+C:/Users/marco/OneDrive/Desktop/Lab 4/combochanger/combochanger.v
+C:/Users/marco/OneDrive/Desktop/Lab 4/comparator/comparator.v
+C:/Users/marco/OneDrive/Desktop/Lab 4/statemachine/statemachine.v
+c:/intelfpga/22.1std/quartus/bin64/assignment_defaults.qdf
+	======= Total: 11 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

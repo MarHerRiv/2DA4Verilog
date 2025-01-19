@@ -1,0 +1,22 @@
+|combochanger
+clock => combo[0]~reg0.CLK
+clock => combo[1]~reg0.CLK
+clock => combo[2]~reg0.CLK
+clock => combo[3]~reg0.CLK
+enter => always0.IN0
+change => always0.IN1
+new => always0.IN1
+resetn => combo[0]~reg0.ACLR
+resetn => combo[1]~reg0.PRESET
+resetn => combo[2]~reg0.PRESET
+resetn => combo[3]~reg0.ACLR
+x[0] => combo[0]~reg0.DATAIN
+x[1] => combo[1]~reg0.DATAIN
+x[2] => combo[2]~reg0.DATAIN
+x[3] => combo[3]~reg0.DATAIN
+combo[0] <= combo[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+combo[1] <= combo[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+combo[2] <= combo[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+combo[3] <= combo[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

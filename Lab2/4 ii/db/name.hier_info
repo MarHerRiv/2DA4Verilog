@@ -1,0 +1,45 @@
+|name
+nx3 => nsegment2.IN1
+nx3 => nsegment3.IN0
+nx3 => nsegment3.IN0
+nx3 => nsegment4.IN0
+nx3 => nsegment0.IN1
+nx3 => nsegment1.IN0
+nx3 => nsegment6.IN0
+nx3 => nsegment6.IN0
+nx2 => nsegment0.IN0
+nx2 => nsegment0.IN0
+nx2 => nsegment1.IN1
+nx2 => nsegment2.IN0
+nx2 => nsegment3.IN1
+nx2 => nsegment0.IN0
+nx2 => nsegment4.IN1
+nx2 => nsegment6.IN1
+nx1 => nsegment0.IN1
+nx1 => nsegment2.IN0
+nx1 => nsegment3.IN1
+nx1 => nsegment0.IN1
+nx1 => nsegment1.IN1
+nx1 => nsegment2.IN1
+nx1 => nsegment2.IN0
+nx1 => nsegment3.IN1
+nx1 => nsegment3.IN0
+nx1 => nsegment4.IN1
+nx0 => nsegment0.IN1
+nx0 => nsegment2.IN1
+nx0 => nsegment3.IN1
+nx0 => nsegment0.IN1
+nx0 => nsegment1.IN1
+nx0 => nsegment2.IN1
+nx0 => nsegment3.IN1
+nx0 => nsegment4.IN1
+nx0 => nsegment6.IN1
+nsegment0 <= nsegment0.DB_MAX_OUTPUT_PORT_TYPE
+nsegment1 <= nsegment1.DB_MAX_OUTPUT_PORT_TYPE
+nsegment2 <= nsegment2.DB_MAX_OUTPUT_PORT_TYPE
+nsegment3 <= nsegment3.DB_MAX_OUTPUT_PORT_TYPE
+nsegment4 <= nsegment4.DB_MAX_OUTPUT_PORT_TYPE
+nsegment5 <= nsegment5.DB_MAX_OUTPUT_PORT_TYPE
+nsegment6 <= nsegment6.DB_MAX_OUTPUT_PORT_TYPE
+
+

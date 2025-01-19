@@ -1,0 +1,16 @@
+Quartus Prime Archive log --	C:/Users/marco/OneDrive/Desktop/Lab3/hex7seg.qarlog
+
+Archive:	C:/Users/marco/OneDrive/Desktop/Lab3/hex7seg.qar
+Date:		Fri Nov  3 15:42:43 2023
+Quartus Prime		22.1std.2 Build 922 07/20/2023 SC Standard Edition
+
+	=========== Files Selected: ===========
+C:/Users/marco/OneDrive/Desktop/Lab3/hex7seg.qpf
+C:/Users/marco/OneDrive/Desktop/Lab3/hex7seg.qsf
+C:/Users/marco/OneDrive/Desktop/Lab3/hex7seg.v
+C:/Users/marco/OneDrive/Desktop/Lab3/hex7seg.vwf
+c:/intelfpga/22.1std/quartus/bin64/assignment_defaults.qdf
+	======= Total: 5 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

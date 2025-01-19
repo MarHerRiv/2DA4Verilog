@@ -1,0 +1,12 @@
+
+State Machine - |pulsetest|cpulse
+Name cpulse.Ac cpulse.Cc cpulse.Bc 
+cpulse.Ac 0 0 0 
+cpulse.Bc 1 0 1 
+cpulse.Cc 1 1 0 
+
+State Machine - |pulsetest|epulse
+Name epulse.Ae epulse.Ce epulse.Be 
+epulse.Ae 0 0 0 
+epulse.Be 1 0 1 
+epulse.Ce 1 1 0 

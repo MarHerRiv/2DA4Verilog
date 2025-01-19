@@ -1,0 +1,318 @@
+// Copyright (C) 2023  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and any partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details, at
+// https://fpgasoftware.intel.com/eula.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus Prime"
+// VERSION "Version 22.1std.2 Build 922 07/20/2023 SC Standard Edition"
+
+// DATE "11/16/2023 21:31:01"
+
+// 
+// Device: Altera 5CSEMA5F31C6 Package FBGA896
+// 
+
+// 
+// This Verilog file should be used for Questa Intel FPGA (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module inputcond (
+	Ainput,
+	clock,
+	led);
+input 	Ainput;
+input 	clock;
+output 	led;
+
+// Design Ports Information
+// led	=>  Location: PIN_E4,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Ainput	=>  Location: PIN_G11,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// clock	=>  Location: PIN_Y27,	 I/O Standard: 2.5 V,	 Current Strength: Default
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \~QUARTUS_CREATED_GND~I_combout ;
+wire \clock~input_o ;
+wire \clock~inputCLKENA0_outclk ;
+wire \Ainput~input_o ;
+wire \Selector3~0_combout ;
+wire \pulse.C~q ;
+wire \Selector1~0_combout ;
+wire \pulse.A~q ;
+wire \Selector2~0_combout ;
+wire \pulse.B~q ;
+wire \led~0_combout ;
+wire \led~reg0_q ;
+
+
+// Location: IOOBUF_X10_Y81_N76
+cyclonev_io_obuf \led~output (
+	.i(\led~reg0_q ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(led),
+	.obar());
+// synopsys translate_off
+defparam \led~output .bus_hold = "false";
+defparam \led~output .open_drain_output = "false";
+defparam \led~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOIBUF_X89_Y25_N21
+cyclonev_io_ibuf \clock~input (
+	.i(clock),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\clock~input_o ));
+// synopsys translate_off
+defparam \clock~input .bus_hold = "false";
+defparam \clock~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: CLKCTRL_G10
+cyclonev_clkena \clock~inputCLKENA0 (
+	.inclk(\clock~input_o ),
+	.ena(vcc),
+	.outclk(\clock~inputCLKENA0_outclk ),
+	.enaout());
+// synopsys translate_off
+defparam \clock~inputCLKENA0 .clock_type = "global clock";
+defparam \clock~inputCLKENA0 .disable_mode = "low";
+defparam \clock~inputCLKENA0 .ena_register_mode = "always enabled";
+defparam \clock~inputCLKENA0 .ena_register_power_up = "high";
+defparam \clock~inputCLKENA0 .test_syn = "high";
+// synopsys translate_on
+
+// Location: IOIBUF_X10_Y81_N58
+cyclonev_io_ibuf \Ainput~input (
+	.i(Ainput),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\Ainput~input_o ));
+// synopsys translate_off
+defparam \Ainput~input .bus_hold = "false";
+defparam \Ainput~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LABCELL_X10_Y80_N15
+cyclonev_lcell_comb \Selector3~0 (
+// Equation(s):
+// \Selector3~0_combout  = ( \pulse.A~q  & ( !\Ainput~input_o  ) )
+
+	.dataa(!\Ainput~input_o ),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(!\pulse.A~q ),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\Selector3~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \Selector3~0 .extended_lut = "off";
+defparam \Selector3~0 .lut_mask = 64'h00000000AAAAAAAA;
+defparam \Selector3~0 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: FF_X10_Y80_N16
+dffeas \pulse.C (
+	.clk(\clock~inputCLKENA0_outclk ),
+	.d(\Selector3~0_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\pulse.C~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \pulse.C .is_wysiwyg = "true";
+defparam \pulse.C .power_up = "low";
+// synopsys translate_on
+
+// Location: LABCELL_X10_Y80_N12
+cyclonev_lcell_comb \Selector1~0 (
+// Equation(s):
+// \Selector1~0_combout  = ( \pulse.C~q  & ( !\Ainput~input_o  ) ) # ( !\pulse.C~q  & ( (!\Ainput~input_o ) # (\pulse.A~q ) ) )
+
+	.dataa(!\Ainput~input_o ),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\pulse.A~q ),
+	.datae(gnd),
+	.dataf(!\pulse.C~q ),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\Selector1~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \Selector1~0 .extended_lut = "off";
+defparam \Selector1~0 .lut_mask = 64'hAAFFAAFFAAAAAAAA;
+defparam \Selector1~0 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: FF_X10_Y80_N14
+dffeas \pulse.A (
+	.clk(\clock~inputCLKENA0_outclk ),
+	.d(\Selector1~0_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\pulse.A~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \pulse.A .is_wysiwyg = "true";
+defparam \pulse.A .power_up = "low";
+// synopsys translate_on
+
+// Location: LABCELL_X10_Y80_N9
+cyclonev_lcell_comb \Selector2~0 (
+// Equation(s):
+// \Selector2~0_combout  = ( \pulse.B~q  & ( \pulse.A~q  & ( \Ainput~input_o  ) ) ) # ( \pulse.B~q  & ( !\pulse.A~q  & ( \Ainput~input_o  ) ) ) # ( !\pulse.B~q  & ( !\pulse.A~q  & ( !\Ainput~input_o  ) ) )
+
+	.dataa(!\Ainput~input_o ),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(gnd),
+	.datae(!\pulse.B~q ),
+	.dataf(!\pulse.A~q ),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\Selector2~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \Selector2~0 .extended_lut = "off";
+defparam \Selector2~0 .lut_mask = 64'hAAAA555500005555;
+defparam \Selector2~0 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: FF_X10_Y80_N11
+dffeas \pulse.B (
+	.clk(\clock~inputCLKENA0_outclk ),
+	.d(\Selector2~0_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\pulse.B~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \pulse.B .is_wysiwyg = "true";
+defparam \pulse.B .power_up = "low";
+// synopsys translate_on
+
+// Location: LABCELL_X10_Y80_N42
+cyclonev_lcell_comb \led~0 (
+// Equation(s):
+// \led~0_combout  = ( \led~reg0_q  & ( \pulse.A~q  & ( (!\pulse.B~q ) # (\Ainput~input_o ) ) ) ) # ( \led~reg0_q  & ( !\pulse.A~q  ) ) # ( !\led~reg0_q  & ( !\pulse.A~q  & ( !\Ainput~input_o  ) ) )
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(!\Ainput~input_o ),
+	.datad(!\pulse.B~q ),
+	.datae(!\led~reg0_q ),
+	.dataf(!\pulse.A~q ),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\led~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \led~0 .extended_lut = "off";
+defparam \led~0 .lut_mask = 64'hF0F0FFFF0000FF0F;
+defparam \led~0 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: FF_X10_Y80_N43
+dffeas \led~reg0 (
+	.clk(\clock~inputCLKENA0_outclk ),
+	.d(\led~0_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\led~reg0_q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \led~reg0 .is_wysiwyg = "true";
+defparam \led~reg0 .power_up = "low";
+// synopsys translate_on
+
+// Location: LABCELL_X67_Y21_N3
+cyclonev_lcell_comb \~QUARTUS_CREATED_GND~I (
+// Equation(s):
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\~QUARTUS_CREATED_GND~I_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \~QUARTUS_CREATED_GND~I .extended_lut = "off";
+defparam \~QUARTUS_CREATED_GND~I .lut_mask = 64'h0000000000000000;
+defparam \~QUARTUS_CREATED_GND~I .shared_arith = "off";
+// synopsys translate_on
+
+endmodule

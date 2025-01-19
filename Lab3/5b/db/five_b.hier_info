@@ -1,0 +1,28 @@
+|five_b
+carryin => s.IN1
+carryin => c.IN0
+carryin => c.IN0
+x[0] => s.IN0
+x[0] => c.IN0
+x[0] => c.IN1
+x[1] => s.IN0
+x[1] => c.IN0
+x[1] => c.IN1
+x[2] => s.IN0
+x[2] => c.IN0
+x[2] => c.IN1
+y[0] => s.IN1
+y[0] => c.IN1
+y[0] => c.IN1
+y[1] => s.IN1
+y[1] => c.IN1
+y[1] => c.IN1
+y[2] => s.IN1
+y[2] => c.IN1
+y[2] => c.IN1
+s[0] << s.DB_MAX_OUTPUT_PORT_TYPE
+s[1] << s.DB_MAX_OUTPUT_PORT_TYPE
+s[2] << s.DB_MAX_OUTPUT_PORT_TYPE
+carryout << c.DB_MAX_OUTPUT_PORT_TYPE
+
+

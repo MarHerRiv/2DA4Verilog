@@ -1,0 +1,16 @@
+Quartus Prime Archive log --	C:/Users/marco/OneDrive/Desktop/Lab3/5c/alu3.qarlog
+
+Archive:	C:/Users/marco/OneDrive/Desktop/Lab3/5c/alu3.qar
+Date:		Fri Nov  3 15:48:22 2023
+Quartus Prime		22.1std.2 Build 922 07/20/2023 SC Standard Edition
+
+	=========== Files Selected: ===========
+C:/Users/marco/OneDrive/Desktop/Lab3/5c/alu3.qpf
+C:/Users/marco/OneDrive/Desktop/Lab3/5c/alu3.qsf
+C:/Users/marco/OneDrive/Desktop/Lab3/5c/alu3.v
+C:/Users/marco/OneDrive/Desktop/Lab3/5c/alu3.vwf
+c:/intelfpga/22.1std/quartus/bin64/assignment_defaults.qdf
+	======= Total: 5 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

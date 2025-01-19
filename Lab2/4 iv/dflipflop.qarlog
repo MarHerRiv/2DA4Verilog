@@ -1,0 +1,16 @@
+Quartus Prime Archive log --	C:/Users/marco/OneDrive/Desktop/Lab2/4 iv/dflipflop.qarlog
+
+Archive:	C:/Users/marco/OneDrive/Desktop/Lab2/4 iv/dflipflop.qar
+Date:		Fri Oct 20 15:47:30 2023
+Quartus Prime		22.1std.2 Build 922 07/20/2023 SC Standard Edition
+
+	=========== Files Selected: ===========
+C:/Users/marco/OneDrive/Desktop/Lab2/4 iv/dflipflop.qpf
+C:/Users/marco/OneDrive/Desktop/Lab2/4 iv/dflipflop.qsf
+C:/Users/marco/OneDrive/Desktop/Lab2/4 iv/dflipflop.v
+C:/Users/marco/OneDrive/Desktop/Lab2/4 iv/dflipflop.vwf
+c:/intelfpga/22.1std/quartus/bin64/assignment_defaults.qdf
+	======= Total: 5 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

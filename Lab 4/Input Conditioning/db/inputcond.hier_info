@@ -1,0 +1,16 @@
+|inputcond
+Ainput => pulse.OUTPUTSELECT
+Ainput => pulse.OUTPUTSELECT
+Ainput => pulse.OUTPUTSELECT
+Ainput => led.OUTPUTSELECT
+Ainput => pulse.OUTPUTSELECT
+Ainput => pulse.OUTPUTSELECT
+Ainput => pulse.OUTPUTSELECT
+Ainput => led.OUTPUTSELECT
+Ainput => pulse.OUTPUTSELECT
+Ainput => pulse.OUTPUTSELECT
+clock => led~reg0.CLK
+clock => pulse~4.DATAIN
+led <= led~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

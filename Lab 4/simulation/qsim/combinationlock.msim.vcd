@@ -1,0 +1,462 @@
+$comment
+	File created using the following command:
+		vcd file combinationlock.msim.vcd -direction
+$end
+$date
+	Fri Nov 17 01:27:49 2023
+$end
+$version
+	ModelSim Version 2020.1
+$end
+$timescale
+	1ps
+$end
+
+$scope module combinationlock_vlg_vec_tst $end
+$var reg 1 ! change_button $end
+$var reg 1 " clock $end
+$var reg 1 # enter_button $end
+$var reg 1 $ resetn $end
+$var reg 4 % x [3:0] $end
+$var wire 1 & leds [0] $end
+$var wire 1 ' leds [1] $end
+$var wire 1 ( leds [2] $end
+$var wire 1 ) leds [3] $end
+$var wire 1 * leds [4] $end
+$var wire 1 + leds [5] $end
+$var wire 1 , leds [6] $end
+
+$scope module i1 $end
+$var wire 1 - gnd $end
+$var wire 1 . vcc $end
+$var wire 1 / unknown $end
+$var tri1 1 0 devclrn $end
+$var tri1 1 1 devpor $end
+$var tri1 1 2 devoe $end
+$var wire 1 3 ~QUARTUS_CREATED_GND~I_combout $end
+$var wire 1 4 clock~input_o $end
+$var wire 1 5 clock~inputCLKENA0_outclk $end
+$var wire 1 6 x[2]~input_o $end
+$var wire 1 7 inputx|Q[2]~feeder_combout $end
+$var wire 1 8 resetn~input_o $end
+$var wire 1 9 x[1]~input_o $end
+$var wire 1 : comb_3|combo[1]~0_combout $end
+$var wire 1 ; enter_button~input_o $end
+$var wire 1 < enter_conditioning|Selector3~0_combout $end
+$var wire 1 = enter_conditioning|pulse.C~q $end
+$var wire 1 > enter_conditioning|Selector1~0_combout $end
+$var wire 1 ? enter_conditioning|pulse.A~q $end
+$var wire 1 @ enter_conditioning|Selector2~0_combout $end
+$var wire 1 A enter_conditioning|pulse.B~q $end
+$var wire 1 B enter_conditioning|led~0_combout $end
+$var wire 1 C enter_conditioning|led~q $end
+$var wire 1 D change_button~input_o $end
+$var wire 1 E change_conditioning|Selector3~0_combout $end
+$var wire 1 F change_conditioning|pulse.C~q $end
+$var wire 1 G change_conditioning|Selector1~0_combout $end
+$var wire 1 H change_conditioning|pulse.A~q $end
+$var wire 1 I change_conditioning|Selector2~0_combout $end
+$var wire 1 J change_conditioning|pulse.B~q $end
+$var wire 1 K change_conditioning|led~0_combout $end
+$var wire 1 L change_conditioning|led~q $end
+$var wire 1 M x[3]~input_o $end
+$var wire 1 N comp|Equal0~0_combout $end
+$var wire 1 O fsm|Selector4~1_combout $end
+$var wire 1 P fsm|state_changer.E_225~combout $end
+$var wire 1 Q fsm|state.E~q $end
+$var wire 1 R fsm|Selector0~0_combout $end
+$var wire 1 S fsm|state_changer.A_325~combout $end
+$var wire 1 T fsm|state.A~0_combout $end
+$var wire 1 U fsm|state.A~q $end
+$var wire 1 V fsm|always0~0_combout $end
+$var wire 1 W fsm|Selector2~0_combout $end
+$var wire 1 X fsm|state_changer.C_275~combout $end
+$var wire 1 Y fsm|state.C~q $end
+$var wire 1 Z fsm|Selector4~0_combout $end
+$var wire 1 [ fsm|Selector1~0_combout $end
+$var wire 1 \ fsm|state_changer.B_300~combout $end
+$var wire 1 ] fsm|state.B~q $end
+$var wire 1 ^ comb_3|always0~0_combout $end
+$var wire 1 _ stored_combo|Q[1]~0_combout $end
+$var wire 1 ` x[0]~input_o $end
+$var wire 1 a comb_3|combo[2]~1_combout $end
+$var wire 1 b stored_combo|Q[2]~1_combout $end
+$var wire 1 c comp|Equal0~1_combout $end
+$var wire 1 d fsm|Selector5~0_combout $end
+$var wire 1 e fsm|Selector3~0_combout $end
+$var wire 1 f fsm|state_changer.D_250~combout $end
+$var wire 1 g fsm|state.D~q $end
+$var wire 1 h leddisplay|leds[4]~0_combout $end
+$var wire 1 i inputx|Q [3] $end
+$var wire 1 j inputx|Q [2] $end
+$var wire 1 k inputx|Q [1] $end
+$var wire 1 l inputx|Q [0] $end
+$var wire 1 m stored_combo|Q [3] $end
+$var wire 1 n stored_combo|Q [2] $end
+$var wire 1 o stored_combo|Q [1] $end
+$var wire 1 p stored_combo|Q [0] $end
+$var wire 1 q comb_3|combo [3] $end
+$var wire 1 r comb_3|combo [2] $end
+$var wire 1 s comb_3|combo [1] $end
+$var wire 1 t comb_3|combo [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1!
+0"
+1#
+0$
+b0 %
+0,
+1+
+1*
+1)
+1(
+1'
+1&
+0-
+1.
+x/
+10
+11
+12
+03
+04
+05
+06
+07
+08
+09
+1:
+1;
+0<
+0=
+0>
+0?
+0@
+0A
+0B
+0C
+1D
+0E
+0F
+0G
+0H
+0I
+0J
+0K
+0L
+0M
+0N
+0O
+0P
+0Q
+1R
+1S
+0T
+0U
+1V
+0W
+0X
+0Y
+0Z
+0[
+0\
+0]
+0^
+1_
+0`
+1a
+1b
+1c
+1d
+0e
+0f
+0g
+0h
+0l
+0k
+0j
+0i
+0p
+0o
+0n
+0m
+0t
+0s
+0r
+0q
+$end
+#10000
+1$
+18
+#20000
+b100 %
+b110 %
+19
+16
+17
+#30000
+0#
+0;
+1B
+1@
+1>
+#50000
+1"
+14
+15
+1n
+1o
+1C
+1A
+1?
+1k
+1j
+0a
+0:
+0V
+0R
+1O
+0B
+0@
+1<
+0S
+1P
+1T
+#100000
+0"
+04
+05
+#150000
+1"
+14
+15
+1U
+1Q
+0C
+0A
+1=
+0)
+1V
+1h
+1Z
+0(
+0*
+#200000
+0"
+04
+05
+#250000
+1"
+14
+15
+#300000
+0"
+04
+05
+#330000
+1#
+1;
+0>
+0<
+#350000
+1"
+14
+15
+0?
+0=
+#400000
+0"
+04
+05
+#420000
+0#
+0;
+1B
+1@
+1>
+#450000
+1"
+14
+15
+1C
+1A
+1?
+0V
+1R
+0O
+0B
+0@
+1<
+1S
+0P
+0T
+#480000
+b10 %
+b0 %
+09
+06
+07
+#500000
+0"
+04
+05
+#550000
+1"
+14
+15
+0U
+0Q
+0C
+0A
+1=
+0k
+0j
+1)
+0c
+1a
+1:
+1V
+0h
+0Z
+1(
+1*
+#600000
+0"
+04
+05
+#650000
+1"
+14
+15
+#680000
+1#
+1;
+0>
+0<
+#700000
+0"
+04
+05
+#720000
+b100 %
+b110 %
+19
+16
+17
+#730000
+0!
+0D
+1K
+1I
+1G
+#750000
+1"
+14
+15
+1L
+1J
+1H
+0?
+0=
+1k
+1j
+1c
+0a
+0:
+0V
+0R
+0K
+0I
+1E
+0S
+1[
+1\
+1T
+#790000
+b10 %
+b0 %
+09
+06
+07
+#799000
+0"
+04
+05
+#850000
+1"
+14
+15
+1]
+1U
+0L
+0J
+1F
+0k
+0j
+0c
+1a
+1:
+1V
+1Z
+1h
+0(
+0*
+#900000
+0"
+04
+05
+#950000
+1"
+14
+15
+#980000
+1!
+1D
+0G
+0E
+#1000000
+0"
+04
+05
+#1050000
+1"
+14
+15
+0H
+0F
+#1090000
+0$
+08
+0U
+0]
+0o
+0n
+1c
+0h
+0[
+1R
+0Z
+1(
+1*
+1S
+0\
+0T
+#1100000
+0"
+04
+05
+#1120000
+1$
+18
+#1150000
+1"
+14
+15
+1n
+1o
+0c
+#1200000

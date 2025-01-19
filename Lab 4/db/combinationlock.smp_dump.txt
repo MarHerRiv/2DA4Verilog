@@ -1,0 +1,20 @@
+
+State Machine - |combinationlock|statemachine:fsm|state
+Name state.D state.C state.B state.A state.E 
+state.A 0 0 0 0 0 
+state.B 0 0 1 1 0 
+state.C 0 1 0 1 0 
+state.D 1 0 0 1 0 
+state.E 0 0 0 1 1 
+
+State Machine - |combinationlock|inputcond:change_conditioning|pulse
+Name pulse.A pulse.C pulse.B 
+pulse.A 0 0 0 
+pulse.B 1 0 1 
+pulse.C 1 1 0 
+
+State Machine - |combinationlock|inputcond:enter_conditioning|pulse
+Name pulse.A pulse.C pulse.B 
+pulse.A 0 0 0 
+pulse.B 1 0 1 
+pulse.C 1 1 0 

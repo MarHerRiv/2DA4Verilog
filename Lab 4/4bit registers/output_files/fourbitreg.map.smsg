@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at fourbitreg.v(6): always construct contains both blocking and non-blocking assignments File: C:/Users/marco/OneDrive/Desktop/Lab 4/4bit registers/fourbitreg.v Line: 6

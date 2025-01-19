@@ -1,0 +1,163 @@
+|combinationlock
+clock => clock.IN6
+resetn => resetn.IN4
+enter_button => enter_button.IN1
+change_button => change_button.IN1
+x[0] => x[0].IN1
+x[1] => x[1].IN1
+x[2] => x[2].IN1
+x[3] => x[3].IN1
+leds[6] <= sevensegment:leddisplay.port3
+leds[5] <= sevensegment:leddisplay.port3
+leds[4] <= sevensegment:leddisplay.port3
+leds[3] <= sevensegment:leddisplay.port3
+leds[2] <= sevensegment:leddisplay.port3
+leds[1] <= sevensegment:leddisplay.port3
+leds[0] <= sevensegment:leddisplay.port3
+
+
+|combinationlock|inputcond:enter_conditioning
+Ainput => pulse.OUTPUTSELECT
+Ainput => pulse.OUTPUTSELECT
+Ainput => pulse.OUTPUTSELECT
+Ainput => led.OUTPUTSELECT
+Ainput => pulse.OUTPUTSELECT
+Ainput => pulse.OUTPUTSELECT
+Ainput => pulse.OUTPUTSELECT
+Ainput => led.OUTPUTSELECT
+Ainput => pulse.OUTPUTSELECT
+Ainput => pulse.OUTPUTSELECT
+clock => led~reg0.CLK
+clock => pulse~4.DATAIN
+led <= led~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|combinationlock|inputcond:change_conditioning
+Ainput => pulse.OUTPUTSELECT
+Ainput => pulse.OUTPUTSELECT
+Ainput => pulse.OUTPUTSELECT
+Ainput => led.OUTPUTSELECT
+Ainput => pulse.OUTPUTSELECT
+Ainput => pulse.OUTPUTSELECT
+Ainput => pulse.OUTPUTSELECT
+Ainput => led.OUTPUTSELECT
+Ainput => pulse.OUTPUTSELECT
+Ainput => pulse.OUTPUTSELECT
+clock => led~reg0.CLK
+clock => pulse~4.DATAIN
+led <= led~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|combinationlock|fourbitreg:inputx
+D[0] => Q[0]~reg0.DATAIN
+D[1] => Q[1]~reg0.DATAIN
+D[2] => Q[2]~reg0.DATAIN
+D[3] => Q[3]~reg0.DATAIN
+Clock => Q[0]~reg0.CLK
+Clock => Q[1]~reg0.CLK
+Clock => Q[2]~reg0.CLK
+Clock => Q[3]~reg0.CLK
+Resetn => Q[0]~reg0.ACLR
+Resetn => Q[1]~reg0.ACLR
+Resetn => Q[2]~reg0.ACLR
+Resetn => Q[3]~reg0.ACLR
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|combinationlock|fourbitreg:stored_combo
+D[0] => Q[0]~reg0.DATAIN
+D[1] => Q[1]~reg0.DATAIN
+D[2] => Q[2]~reg0.DATAIN
+D[3] => Q[3]~reg0.DATAIN
+Clock => Q[0]~reg0.CLK
+Clock => Q[1]~reg0.CLK
+Clock => Q[2]~reg0.CLK
+Clock => Q[3]~reg0.CLK
+Resetn => Q[0]~reg0.ACLR
+Resetn => Q[1]~reg0.ACLR
+Resetn => Q[2]~reg0.ACLR
+Resetn => Q[3]~reg0.ACLR
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|combinationlock|comparator:comp
+x[0] => Equal0.IN3
+x[1] => Equal0.IN2
+x[2] => Equal0.IN1
+x[3] => Equal0.IN0
+combo[0] => Equal0.IN7
+combo[1] => Equal0.IN6
+combo[2] => Equal0.IN5
+combo[3] => Equal0.IN4
+equals <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|combinationlock|combochanger:comb_3
+clock => combo[0]~reg0.CLK
+clock => combo[1]~reg0.CLK
+clock => combo[2]~reg0.CLK
+clock => combo[3]~reg0.CLK
+enter => always0.IN0
+change => always0.IN1
+new => always0.IN1
+resetn => combo[0]~reg0.ACLR
+resetn => combo[1]~reg0.PRESET
+resetn => combo[2]~reg0.PRESET
+resetn => combo[3]~reg0.ACLR
+x[0] => combo[0]~reg0.DATAIN
+x[1] => combo[1]~reg0.DATAIN
+x[2] => combo[2]~reg0.DATAIN
+x[3] => combo[3]~reg0.DATAIN
+combo[0] <= combo[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+combo[1] <= combo[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+combo[2] <= combo[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+combo[3] <= combo[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|combinationlock|statemachine:fsm
+clock => state~1.DATAIN
+enter => always0.IN0
+enter => always0.IN0
+enter => Selector0.IN4
+enter => Selector4.IN3
+enter => always0.IN0
+enter => always0.IN0
+change => always0.IN0
+change => always0.IN1
+change => always0.IN1
+equals => always0.IN1
+equals => always0.IN1
+equals => always0.IN1
+equals => always0.IN1
+resetn => state~3.DATAIN
+new <= new.DB_MAX_OUTPUT_PORT_TYPE
+open <= open.DB_MAX_OUTPUT_PORT_TYPE
+alarm <= alarm.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|combinationlock|sevensegment:leddisplay
+alarm => leds.OUTPUTSELECT
+alarm => leds.OUTPUTSELECT
+alarm => leds.OUTPUTSELECT
+alarm => leds[0].DATAIN
+alarm => leds[1].DATAIN
+alarm => leds[5].DATAIN
+new => leds.OUTPUTSELECT
+new => leds.OUTPUTSELECT
+open => leds.DATAA
+open => leds.DATAA
+leds[6] <= <GND>
+leds[5] <= alarm.DB_MAX_OUTPUT_PORT_TYPE
+leds[4] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[3] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[2] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[1] <= alarm.DB_MAX_OUTPUT_PORT_TYPE
+leds[0] <= alarm.DB_MAX_OUTPUT_PORT_TYPE
+
+

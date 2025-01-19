@@ -1,0 +1,312 @@
+$comment
+	File created using the following command:
+		vcd file fourbitreg.msim.vcd -direction
+$end
+$date
+	Thu Nov 16 22:29:45 2023
+$end
+$version
+	ModelSim Version 2020.1
+$end
+$timescale
+	1ps
+$end
+
+$scope module fourbitreg_vlg_vec_tst $end
+$var reg 1 ! Clock $end
+$var reg 4 " D [3:0] $end
+$var reg 1 # Resetn $end
+$var wire 1 $ Q [3] $end
+$var wire 1 % Q [2] $end
+$var wire 1 & Q [1] $end
+$var wire 1 ' Q [0] $end
+
+$scope module i1 $end
+$var wire 1 ( gnd $end
+$var wire 1 ) vcc $end
+$var wire 1 * unknown $end
+$var tri1 1 + devclrn $end
+$var tri1 1 , devpor $end
+$var tri1 1 - devoe $end
+$var wire 1 . ~QUARTUS_CREATED_GND~I_combout $end
+$var wire 1 / Clock~input_o $end
+$var wire 1 0 Clock~inputCLKENA0_outclk $end
+$var wire 1 1 D[0]~input_o $end
+$var wire 1 2 Q[0]~reg0feeder_combout $end
+$var wire 1 3 Resetn~input_o $end
+$var wire 1 4 Q[0]~reg0_q $end
+$var wire 1 5 D[1]~input_o $end
+$var wire 1 6 Q[1]~reg0feeder_combout $end
+$var wire 1 7 Q[1]~reg0_q $end
+$var wire 1 8 D[2]~input_o $end
+$var wire 1 9 Q[2]~reg0_q $end
+$var wire 1 : D[3]~input_o $end
+$var wire 1 ; Q[3]~reg0feeder_combout $end
+$var wire 1 < Q[3]~reg0_q $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+b0 "
+1#
+0'
+0&
+0%
+0$
+0(
+1)
+x*
+1+
+1,
+1-
+0.
+0/
+00
+01
+02
+13
+04
+05
+06
+07
+08
+09
+0:
+0;
+0<
+$end
+#30000
+b1000 "
+b1100 "
+18
+1:
+1;
+#50000
+1!
+1/
+10
+1<
+19
+1%
+1$
+#60000
+0#
+03
+09
+0<
+0$
+0%
+#70000
+b100 "
+b0 "
+08
+0:
+0;
+#100000
+0!
+0/
+00
+#130000
+b1 "
+b1001 "
+11
+1:
+1;
+12
+#150000
+1#
+1!
+13
+1/
+10
+1<
+14
+1'
+1$
+#170000
+b1000 "
+b0 "
+01
+0:
+0;
+02
+#200000
+0!
+0/
+00
+#250000
+1!
+1/
+10
+0<
+04
+0'
+0$
+#300000
+0!
+0/
+00
+#330000
+b10 "
+b110 "
+b111 "
+b1111 "
+11
+15
+18
+1:
+1;
+16
+12
+#350000
+1!
+1/
+10
+1<
+19
+17
+14
+1'
+1&
+1%
+1$
+#360000
+0#
+03
+04
+07
+09
+0<
+0$
+0%
+0&
+0'
+#370000
+b1101 "
+b1001 "
+b1000 "
+b0 "
+01
+05
+08
+0:
+0;
+06
+02
+#400000
+0!
+0/
+00
+#430000
+1#
+13
+#440000
+b100 "
+b101 "
+b1101 "
+11
+18
+1:
+1;
+12
+#450000
+1!
+1/
+10
+1<
+19
+14
+1'
+1%
+1$
+#480000
+b1001 "
+b1000 "
+01
+08
+02
+#490000
+b1010 "
+15
+16
+#500000
+0!
+0/
+00
+#520000
+b1110 "
+18
+#550000
+1!
+1/
+10
+17
+04
+0'
+1&
+#560000
+b1100 "
+05
+06
+#580000
+b100 "
+b0 "
+08
+0:
+0;
+#600000
+0!
+0/
+00
+#660000
+0#
+b1 "
+1!
+03
+11
+1/
+10
+12
+07
+09
+0<
+0$
+0%
+0&
+#670000
+b11 "
+15
+16
+#690000
+b1011 "
+1:
+1;
+#700000
+0!
+0/
+00
+#710000
+1#
+b1001 "
+13
+05
+06
+#750000
+1!
+1/
+10
+1<
+14
+1'
+1$
+#760000
+b1000 "
+01
+02
+#770000
+b0 "
+0:
+0;
+#800000

@@ -1,0 +1,19 @@
+Quartus Prime Archive log --	C:/Users/marco/OneDrive/Desktop/Lab2/Lab 2/lab2demo.qarlog
+
+Archive:	C:/Users/marco/OneDrive/Desktop/Lab2/Lab 2/lab2demo.qar
+Date:		Fri Oct 20 15:47:01 2023
+Quartus Prime		22.1std.2 Build 922 07/20/2023 SC Standard Edition
+
+	=========== Files Selected: ===========
+C:/Users/marco/OneDrive/Desktop/Lab2/4 i/hexdisp.v
+C:/Users/marco/OneDrive/Desktop/Lab2/4 ii/name.v
+C:/Users/marco/OneDrive/Desktop/Lab2/4 iv/dflipflop.vwf
+C:/Users/marco/OneDrive/Desktop/Lab2/Lab 2/lab2demo.qpf
+C:/Users/marco/OneDrive/Desktop/Lab2/Lab 2/lab2demo.qsf
+C:/Users/marco/OneDrive/Desktop/Lab2/Lab 2/lab2demo.v
+C:/Users/marco/OneDrive/Desktop/Lab2/Lab 2/lab2demo.vwf
+c:/intelfpga/22.1std/quartus/bin64/assignment_defaults.qdf
+	======= Total: 8 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

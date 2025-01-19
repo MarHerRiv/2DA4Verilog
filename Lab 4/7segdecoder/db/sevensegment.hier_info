@@ -1,0 +1,20 @@
+|sevensegment
+alarm => leds.OUTPUTSELECT
+alarm => leds.OUTPUTSELECT
+alarm => leds.OUTPUTSELECT
+alarm => leds[0].DATAIN
+alarm => leds[1].DATAIN
+alarm => leds[5].DATAIN
+new => leds.OUTPUTSELECT
+new => leds.OUTPUTSELECT
+open => leds.DATAA
+open => leds.DATAA
+leds[6] <= <GND>
+leds[5] <= alarm.DB_MAX_OUTPUT_PORT_TYPE
+leds[4] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[3] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[2] <= leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[1] <= alarm.DB_MAX_OUTPUT_PORT_TYPE
+leds[0] <= alarm.DB_MAX_OUTPUT_PORT_TYPE
+
+

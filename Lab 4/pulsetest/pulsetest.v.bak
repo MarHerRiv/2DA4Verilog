@@ -1,0 +1,5 @@
+module pulsetest (reset, enter, change, leds);
+	input reset, enter, change;
+	output [0:2] leds;
+	
+	

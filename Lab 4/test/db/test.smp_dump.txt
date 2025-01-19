@@ -1,0 +1,20 @@
+
+State Machine - |test|state
+Name state.D state.C state.B state.A state.E 
+state.A 0 0 0 0 0 
+state.B 0 0 1 1 0 
+state.C 0 1 0 1 0 
+state.D 1 0 0 1 0 
+state.E 0 0 0 1 1 
+
+State Machine - |test|cstate
+Name cstate.Ac cstate.Cc cstate.Bc 
+cstate.Ac 0 0 0 
+cstate.Bc 1 0 1 
+cstate.Cc 1 1 0 
+
+State Machine - |test|estate
+Name estate.Ae estate.Ce estate.Be 
+estate.Ae 0 0 0 
+estate.Be 1 0 1 
+estate.Ce 1 1 0 

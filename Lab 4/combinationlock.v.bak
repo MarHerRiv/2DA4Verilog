@@ -1,0 +1,37 @@
+module combolock (clock, resetn, enter, i, leds);
+	input clock, resetn, enter;
+	input [3:0] i;
+	output reg [6:0] leds;
+	
+	reg [2:1] pulse;
+	parameter [2:1] Apulse = 2'b00, Bpulse = 2'b01, Cpulse = 2'b10;
+	reg [3:1] combo;
+	parameter [3:1] A = 3'b000, B = 3'b001, C = 3'b010, D = 3'b011, E = 3'b100, F = 3'b101, G = 3'b110;
+	
+	reg x = 4'b0110
+	reg alarm, new, open;
+	
+	always @(clock, resetn, enter)
+		case (combo)
+			A: x = 4'b0110
+				new = 0;
+				open = 0;
+				alarm = 0;
+				if (enter & i == x) combo = F;
+				else if (enter & i != x) combo = D;
+				else if (change & i != x) combo = D;
+				else if (change & i == x)
+				begin
+						combo = B;
+						new = 1;
+				end
+				else combo = A;
+			B: if (enter | change)
+				begin
+				new = 1;
+				x	= i;
+				combo = C;
+				end
+				else
+				combo = A;
+			C: 

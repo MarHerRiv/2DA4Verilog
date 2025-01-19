@@ -1,0 +1,91 @@
+$comment
+	File created using the following command:
+		vcd file dflipflop.msim.vcd -direction
+$end
+$date
+	Thu Oct 19 20:58:04 2023
+$end
+$version
+	ModelSim Version 2020.1
+$end
+$timescale
+	1ps
+$end
+
+$scope module dflipflop_vlg_vec_tst $end
+$var reg 1 ! Clock $end
+$var reg 1 " d $end
+$var wire 1 # q $end
+
+$scope module i1 $end
+$var wire 1 $ gnd $end
+$var wire 1 % vcc $end
+$var wire 1 & unknown $end
+$var tri1 1 ' devclrn $end
+$var tri1 1 ( devpor $end
+$var tri1 1 ) devoe $end
+$var wire 1 * ~QUARTUS_CREATED_GND~I_combout $end
+$var wire 1 + Clock~input_o $end
+$var wire 1 , d~input_o $end
+$var wire 1 - q~reg0_q $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+1"
+0#
+0$
+1%
+x&
+1'
+1(
+1)
+0*
+0+
+1,
+0-
+$end
+#10000
+1!
+1+
+1-
+1#
+#20000
+0"
+0!
+0,
+0+
+#30000
+1!
+1+
+0-
+0#
+#40000
+0!
+0+
+#50000
+1!
+1+
+#60000
+1"
+0!
+1,
+0+
+#70000
+1!
+1+
+1-
+1#
+#80000
+0!
+0+
+#90000
+0"
+1!
+0,
+1+
+0-
+0#
+#100000

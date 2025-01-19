@@ -1,0 +1,57 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/marco/OneDrive/Desktop/Lab 4/4bit registers/simulation/qsim
+vfourbitreg
+Z1 !s110 1700191785
+!i10b 1
+!s100 U7Dg_6FY^]P;6>zH?om?K1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I[GDko<=T[Ii>zX52[f`eC0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1700191783
+8fourbitreg.vo
+Ffourbitreg.vo
+!i122 24
+L0 32 367
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1700191784.000000
+!s107 fourbitreg.vo|
+!s90 -work|work|fourbitreg.vo|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vfourbitreg_vlg_vec_tst
+R1
+!i10b 1
+!s100 ^`7[B6eV29m3hDJd`^FTL0
+R2
+IA>Nc@GzQo3Na8F^[kJ^k00
+R3
+R0
+w1700191781
+8fourbitreg.vwf.vt
+Ffourbitreg.vwf.vt
+!i122 25
+L0 30 111
+R4
+r1
+!s85 0
+31
+!s108 1700191785.000000
+!s107 fourbitreg.vwf.vt|
+!s90 -work|work|fourbitreg.vwf.vt|
+!i113 1
+R5
+R6

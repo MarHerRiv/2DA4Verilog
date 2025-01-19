@@ -1,0 +1,41 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "new",
+					"strict" : false
+				},
+				{
+					"name" : "open",
+					"strict" : false
+				},
+				{
+					"name" : "alarm",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				},
+				{
+					"name" : "resetn",
+					"strict" : false
+				},
+				{
+					"name" : "enter",
+					"strict" : false
+				},
+				{
+					"name" : "change",
+					"strict" : false
+				},
+				{
+					"name" : "equals",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

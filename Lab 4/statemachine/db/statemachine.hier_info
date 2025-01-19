@@ -1,0 +1,21 @@
+|statemachine
+clock => state~1.DATAIN
+enter => always0.IN0
+enter => always0.IN0
+enter => Selector0.IN4
+enter => Selector4.IN3
+enter => always0.IN0
+enter => always0.IN0
+change => always0.IN0
+change => always0.IN1
+change => always0.IN1
+equals => always0.IN1
+equals => always0.IN1
+equals => always0.IN1
+equals => always0.IN1
+resetn => state~3.DATAIN
+new <= new.DB_MAX_OUTPUT_PORT_TYPE
+open <= open.DB_MAX_OUTPUT_PORT_TYPE
+alarm <= alarm.DB_MAX_OUTPUT_PORT_TYPE
+
+

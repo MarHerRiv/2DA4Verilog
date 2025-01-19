@@ -1,0 +1,6 @@
+
+State Machine - |inputcond|pulse
+Name pulse.A pulse.C pulse.B 
+pulse.A 0 0 0 
+pulse.B 1 0 1 
+pulse.C 1 1 0 

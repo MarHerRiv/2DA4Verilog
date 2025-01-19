@@ -1,0 +1,12 @@
+|comparator
+x[0] => Equal0.IN3
+x[1] => Equal0.IN2
+x[2] => Equal0.IN1
+x[3] => Equal0.IN0
+combo[0] => Equal0.IN7
+combo[1] => Equal0.IN6
+combo[2] => Equal0.IN5
+combo[3] => Equal0.IN4
+equals <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+
